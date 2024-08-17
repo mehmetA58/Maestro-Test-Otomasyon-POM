@@ -1,0 +1,10 @@
+appId: "trendyol.com"
+---
+- launchApp
+- runScript: trendyol.js
+- assertVisible:
+    id: ${output.trendyol.anasayfaButton}
+- assertVisible:
+    id: ${output.trendyol.hizmetlerimiziKesfet.title}
+- tapOn:
+    id: ${output.trendyol.populerUrunler.tumunuGorButton}
